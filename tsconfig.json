@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
-    "sourceMap": true
+    "sourceMap": false // 不会生成.map文件
   },
   "exclude": [
     "node_modules"
