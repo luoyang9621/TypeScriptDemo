@@ -21,3 +21,12 @@ var k = null; // 空值
 var m = 'hhh';
 var n = m.length; // 类型断言
 var mLen = m.length; // 类型断言
+// 联合类型,可以赋值为多种类型中的一种
+var x = 123;
+x = 'Alice';
+// 联合类型，返回值只能是所有类型共有的属性，length不是string和number共有的属性。所以会报错，
+// 换成toString()就不会报错了.
+function getLength(something) {
+    // return something.length;
+    return something.toString();
+}
